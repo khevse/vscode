@@ -1,0 +1,23 @@
+{
+    "editor.rulers": [
+        80,
+        100,
+        120
+    ],
+    "window.zoomLevel": 0.7,
+    "editor.fontSize": 13.5,
+    "files.autoSave": "afterDelay",
+    "editor.renderWhitespace": "all",
+    "explorer.confirmDelete": false,
+    "files.trimTrailingWhitespace": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": false,
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+    "editor.formatOnPaste": true,
+    "workbench.editor.showTabs": true,
+    "editor.renderControlCharacters": true,
+    "breadcrumbs.enabled": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+}

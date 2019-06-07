@@ -1,0 +1,33 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "cmd+shift+c",
+        "command": "workbench.action.tasks.runTask",
+        "args": "terminal",
+    },
+    {
+        "key": "cmd+shift+m",
+        "command": "workbench.action.tasks.runTask",
+        "args": "make"
+    },
+    {
+        "key": "cmd+shift+g cmd+shift+t",
+        "command": "workbench.action.tasks.runTask",
+        "args": "go-test-all"
+    },
+    {
+        "key": "cmd+shift+g cmd+shift+o",
+        "command": "workbench.action.tasks.runTask",
+        "args": "go-test-one"
+    },
+    {
+        "key": "cmd+shift+g cmd+shift+r",
+        "command": "workbench.action.tasks.runTask",
+        "args": "go-run"
+    },
+    {
+        "key": "cmd+shift+g cmd+shift+c",
+        "command": "workbench.action.tasks.runTask",
+        "args": "go-test-cover"
+    }
+]

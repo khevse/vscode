@@ -1,0 +1,42 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "terminal",
+            "type": "shell",
+            "command": "open -a Terminal '${fileDirname}'"
+        },
+        {
+            "label": "make",
+            "type": "shell",
+            "command": "cd ${fileDirname} && clear && make"
+        },
+        {
+            "label": "go-run",
+            "type": "shell",
+            "command": "cd ${fileDirname} && clear && go run main.go"
+        },
+        {
+            "label": "go-test-all",
+            "type": "shell",
+            "command": "cd ${fileDirname} && clear && GORACE=\"log_path=/tmp/race/report\" go test -v -race -cover -coverprofile cover.out"
+        },
+        {
+            "label": "go-test-all-grpc",
+            "type": "shell",
+            "command": "cd ${fileDirname} && clear && GORACE=\"log_path=/tmp/race/report\" GRPC_VERBOSITY=debug GRPC_TRACE=all GODEBUG=http2debug=2 go test -v -race"
+        },
+        {
+            "label": "go-test-one",
+            "type": "shell",
+            "command": "cd ${fileDirname} && clear && go test -race -v -run=<TODO>"
+        },
+        {
+            "label": "go-test-cover",
+            "type": "shell",
+            "command": "cd ${fileDirname} && go tool cover -html=cover.out"
+        }
+    ]
+}
