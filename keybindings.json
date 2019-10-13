@@ -29,5 +29,10 @@
         "key": "cmd+shift+g cmd+shift+c",
         "command": "workbench.action.tasks.runTask",
         "args": "go-test-cover"
+    },
+    {
+        "key": "alt+shift+d alt+shift+c",
+        "command": "workbench.action.tasks.runTask",
+        "args": "docker-clear-volumes"
     }
 ]
