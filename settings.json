@@ -4,7 +4,7 @@
         100,
         120
     ],
-    "window.zoomLevel": 0.7,
+    "window.zoomLevel": 0,
     "editor.fontSize": 13.5,
     "files.autoSave": "afterDelay",
     "editor.renderWhitespace": "all",
@@ -19,5 +19,15 @@
     "editor.renderControlCharacters": true,
     "breadcrumbs.enabled": true,
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "terminal.explorerKind": "external",
+    "terminal.integrated.cwd": "${fileDirname}",
+    "go.autocompleteUnimportedPackages": true,
+    "go.gotoSymbol.includeImports": true,
+    "go.gotoSymbol.includeGoroot": true,
+    "go.inferGopath": true,
+    "[go]": {
+        "editor.formatOnSave": true
+    },
+    "go.formatTool": "goimports"
 }
