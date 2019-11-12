@@ -37,6 +37,11 @@
             "label": "go-test-cover",
             "type": "shell",
             "command": "cd ${fileDirname} && go tool cover -html=cover.out"
-        }
+        },
+        {
+            "label": "docker-clear-volumes",
+            "type": "shell",
+            "command": "docker stop $(docker ps -q) && docker rm $(docker ps -a -q) && docker volume rm $(docker volume list -q) "
+        },
     ]
 }
